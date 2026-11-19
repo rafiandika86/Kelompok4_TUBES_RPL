@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rhodes Clinic</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=Barlow:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="shell">
+    <!-- Sidebar kiri buat navigasi -->
+    <aside class="side">
+      <!-- Ini logo yh -->
+      <div class="brand">
+        <img src="profile.png" alt="Logo Rhodes Clinic" class="logo">
+        <b>Rhodes Clinic</b>
+      </div>
+      <p class="hint">Login dengan akun tiap peran untuk mencoba alur di diagram.</p>
+      
+      <!-- Tombol pindah role -->
+      <nav id="roles" aria-label="Pilih peran"></nav>
+      
+      <!-- Tombol login/logout -->
+      <button id="authBtn" class="pill ghost"></button>
+    </aside>
+
+    <!-- Konten utama muncul di sini -->
+    <main id="app"></main>
+  </div>
+
+  <!-- Popup login & notif toast -->
+  <dialog id="authDlg"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
